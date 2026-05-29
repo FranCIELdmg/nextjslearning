@@ -1,4 +1,23 @@
 import pool from '@/app/lib/db'
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Home - Aprendendo NextJS do zero!',
+  description: 'Projeto criado para aprender NextJS do zero, utilizando a versão mais recente e seus novos recursos.',
+  openGraph: {
+    title: 'Home - Aprendendo NextJS do zero!',
+    description: 'Projeto criado para aprender NextJS do zero, utilizando a versão mais recente e seus novos recursos.',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    }
+  }
+}
 
 async function testarConexao(){
   try {
